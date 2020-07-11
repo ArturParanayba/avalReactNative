@@ -19,6 +19,7 @@ import {
   IconFontAwesome,
   IonIcon,
   IconFeather,
+  CenterBox,
 } from './styles';
 
 const BottomMenu: React.FC = () => {
@@ -32,6 +33,7 @@ const BottomMenu: React.FC = () => {
         </CenterView>
       </InnerView>
 
+      <CenterBox />
       <BottomMenuView>
         <IconsLeft>
           <TouchableOpacity

@@ -10,7 +10,7 @@ export const Container = styled.View`
 `;
 
 export const CenterView = styled.View`
-  position: absolute;
+  position: relative;
   align-self: center;
   justify-content: center;
   align-items: center;
@@ -18,18 +18,36 @@ export const CenterView = styled.View`
   width: 50px;
   height: 50px;
   border-radius: 35px;
-  bottom: 5px;
-  z-index: 1;
+  bottom: 40%;
+  z-index: 4;
 `;
 
 export const InnerView = styled.View`
-  z-index: 1;
-  width: 80px;
+  position: relative;
+  z-index: 4;
+  width: 24.5%;
   height: 40px;
+  left: 0.85%;
+  /* background-color: #4a1592; */
   background-color: #4a1592;
-  bottom: 10px;
-  border-bottom-right-radius: 100px;
-  border-bottom-left-radius: 100px;
+  /* border: 1px; */
+  top: 60%;
+  border-bottom-right-radius: 150px;
+  border-bottom-left-radius: 150px;
+`;
+export const CenterBox = styled.View`
+  position: relative;
+  z-index: 3;
+  top: 45%;
+  width: 23%;
+  height: 40px;
+  left: -0.02%;
+  /* background-color: #4a1592; */
+  background-color: #2b1548;
+  /* background-color: transparent; */
+  bottom: -35%;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
 `;
 
 export const CenterButtonText = styled.Text`
@@ -39,8 +57,8 @@ export const CenterButtonText = styled.Text`
 `;
 
 export const BottomMenuView = styled.View`
-  position: absolute;
-  background-color: #2b1548;
+  position: relative;
+  background-color: transparent;
   bottom: 0;
   width: 100%;
   height: 50px;
@@ -49,12 +67,17 @@ export const BottomMenuView = styled.View`
 `;
 
 export const IconsLeft = styled.View`
+  background-color: #2b1548;
+  width: 40.79%;
+  border-top-right-radius: 30px;
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  margin-right: 16px;
 `;
 export const IconsRight = styled.View`
+  background-color: #2b1548;
+  border-top-left-radius: 30px;
+  width: 39.15%;
   flex-direction: row;
   align-items: center;
   justify-content: center;
