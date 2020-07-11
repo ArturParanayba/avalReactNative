@@ -31,6 +31,8 @@ import {
   HighlightsView,
   TechView,
   ADView,
+  Accept,
+  Decline,
 } from './styles';
 
 const Card: React.FC = () => {
@@ -41,12 +43,29 @@ const Card: React.FC = () => {
       <Swiper
         cards={data}
         cardsIndex={index}
-        renderCard={(card) => (
+        renderCard={(card: {
+          avatar: string;
+          name: React.ReactNode;
+          company: React.ReactNode;
+          distance: React.ReactNode;
+          description: React.ReactNode;
+        }) => (
           <Container>
             <ADView>
-              <AcceptButton name="check" size={30} style={{ color: '#fff' }} />
-              <DeclineButton name="close" size={30} style={{ color: '#fff' }} />
-              {/* <DeclineButton /> */}
+              <Accept>
+                <AcceptButton
+                  name="check"
+                  size={25}
+                  style={{ color: '#fff' }}
+                />
+              </Accept>
+              <Decline>
+                <DeclineButton
+                  name="close"
+                  size={25}
+                  style={{ color: '#fff' }}
+                />
+              </Decline>
             </ADView>
             <Header>
               <Image source={{ uri: card.avatar }} />

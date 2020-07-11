@@ -11,7 +11,7 @@ export const Container = styled.View`
 
 export const Header = styled.View`
   width: 100%;
-  height: 10%;
+  height: 7%;
   top: 4%;
   flex-direction: column;
 `;
@@ -146,7 +146,7 @@ export const MiddleBar = styled.View`
 export const Footer = styled.View`
   width: 100%;
   height: 27.5%;
-  top: 7.5%;
+  top: 10%;
   left: 0;
   flex-direction: column;
   background-color: transparent;
@@ -180,9 +180,11 @@ export const BottomButtonView = styled.View`
 export const ADView = styled.View`
   width: 20%;
   height: 30%;
-  right: 0;
+  right: 4%;
+  top: 1%;
   flex-direction: column;
   background-color: transparent;
+  align-items: center;
   align-self: center;
   z-index: 1;
   position: absolute;
@@ -197,17 +199,38 @@ export const ButtonText = styled.Text`
   color: #8140d8;
 `;
 
-export const AcceptButton = styled(IconAN)`
-  top: 7%;
-  left: 20%;
-  width: 50%;
-  border-radius: 24px;
+export const Accept = styled.View`
+  top: 3%;
+  width: 70%;
+  height: 25%;
+  border-radius: 150px;
   background: #1fb893;
+  position: absolute;
+  align-items: center;
+  z-index: 2;
 `;
+
+export const AcceptButton = styled(IconAN)`
+  top: 20%;
+  background: #1fb893;
+  position: absolute;
+  z-index: 3;
+`;
+export const Decline = styled.View`
+  top: 35%;
+  width: 70%;
+  height: 25%;
+  border-radius: 150px;
+  background: #f23870;
+  position: absolute;
+  z-index: 2;
+  align-items: center;
+`;
+
 export const DeclineButton = styled(IconAN)`
-  top: 25%;
-  left: 20%;
-  width: 50%;
+  top: 20%;
   border-radius: 24px;
   background: #f23870;
+  position: absolute;
+  z-index: 3;
 `;
