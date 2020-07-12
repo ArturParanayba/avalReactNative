@@ -4,7 +4,7 @@ import IconEX from 'react-native-vector-icons/Entypo';
 import IconAN from 'react-native-vector-icons/AntDesign';
 
 export const Container = styled.View`
-  flex: 0.93;
+  flex: 0.91;
   border-radius: 24px;
   background-color: #fff;
 `;
@@ -111,7 +111,7 @@ export const Info = styled.Text`
   line-height: 16px;
   font-size: 14px;
   margin-top: 2%;
-  margin-left: 3%
+  margin-left: 3%;
   border: 2px #000;
   align-items: center;
 `;
@@ -135,12 +135,11 @@ export const BottomView = styled.View`
 
 export const MiddleBar = styled.View`
   width: 90%;
-  left: 5%
+  left: 5%;
   height: 1%;
   top: 0.5%;
   border: 2px rgba(0, 0, 0, 0.03);
   border-radius: 24px;
-
 `;
 
 export const Footer = styled.View`
@@ -180,7 +179,7 @@ export const BottomButtonView = styled.View`
 export const ADView = styled.View`
   width: 20%;
   height: 30%;
-  right: 4%;
+  right: 0;
   top: 1%;
   flex-direction: column;
   background-color: transparent;
@@ -199,9 +198,9 @@ export const ButtonText = styled.Text`
   color: #8140d8;
 `;
 
-export const Accept = styled.View`
+export const Accept = styled.TouchableOpacity`
   top: 3%;
-  width: 70%;
+  width: 55%;
   height: 25%;
   border-radius: 150px;
   background: #1fb893;
@@ -211,14 +210,13 @@ export const Accept = styled.View`
 `;
 
 export const AcceptButton = styled(IconAN)`
-  top: 20%;
-  background: #1fb893;
+  top: 25%;
   position: absolute;
   z-index: 3;
 `;
-export const Decline = styled.View`
+export const Decline = styled.TouchableOpacity`
   top: 35%;
-  width: 70%;
+  width: 55%;
   height: 25%;
   border-radius: 150px;
   background: #f23870;
@@ -228,9 +226,7 @@ export const Decline = styled.View`
 `;
 
 export const DeclineButton = styled(IconAN)`
-  top: 20%;
-  border-radius: 24px;
-  background: #f23870;
+  top: 23%;
   position: absolute;
   z-index: 3;
 `;

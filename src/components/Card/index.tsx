@@ -52,20 +52,32 @@ const Card: React.FC = () => {
         }) => (
           <Container>
             <ADView>
-              <Accept>
+              {/* <TouchableOpacity> */}
+              <Accept
+                onPress={() => {
+                  console.log('bla');
+                }}
+              >
                 <AcceptButton
                   name="check"
-                  size={25}
+                  size={22}
                   style={{ color: '#fff' }}
                 />
               </Accept>
-              <Decline>
+              {/* </TouchableOpacity> */}
+              {/* <TouchableOpacity> */}
+              <Decline
+                onPress={() => {
+                  console.log('ble');
+                }}
+              >
                 <DeclineButton
                   name="close"
-                  size={25}
+                  size={22}
                   style={{ color: '#fff' }}
                 />
               </Decline>
+              {/* </TouchableOpacity> */}
             </ADView>
             <Header>
               <Image source={{ uri: card.avatar }} />
@@ -113,6 +125,9 @@ const Card: React.FC = () => {
             </BottomButtonView>
           </Container>
         )}
+        cardHorizontalMargin={0}
+        showSecondCard="true"
+        stackSize={5}
         disableTopSwipe
         disableBottomSwipe
         backgroundColor="transparent"
