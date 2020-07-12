@@ -112,19 +112,19 @@ const Card: React.FC = () => {
                 <Title>Habilidades Técnicas</Title>
                 <TechView>
                   <Highlight style={{backgroundColor: '#8140D8', borderColor: '#8140D8'}}>
-                    <IconFA name="star" size={13} style={{color: '#5AFFD7'}} />
+                    <IconFA name="star" size={13} color='#5AFFD7' />
                     <Text style={{color: '#5AFFD7', marginLeft: 5}}>
                       POO
                     </Text>
                   </Highlight>
                   <Highlight style={{backgroundColor: '#8140D8', borderColor: '#8140D8'}}>
-                    <IconFA name="star" size={13} style={{color: '#5AFFD7'}} />
+                    <IconFA name="star" size={13} color='#5AFFD7' />
                     <Text style={{color: '#5AFFD7', marginLeft: 5}}>
                       Flutter
                     </Text>
                   </Highlight>
                   <Highlight style={{backgroundColor: '#8140D8', borderColor: '#8140D8'}}>
-                    <IconFA name="star" size={13} style={{color: '#5AFFD7'}} />
+                    <IconFA name="star" size={13} color='#5AFFD7' />
                     <Text style={{color: '#5AFFD7', marginLeft: 5}}>
                       NodeJS
                     </Text>

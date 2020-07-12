@@ -1,6 +1,7 @@
 import React from 'react';
+import Icon from 'react-native-vector-icons/Ionicons';
 
-import { Container, Text } from './styles';
+import { Container, SearchButtonView, AddButtonView } from './styles';
 
 import TopDisplay from '../../components/TopDisplay';
 import BottomMenu from '../../components/BottomMenu';
@@ -12,9 +13,15 @@ const Navigation: React.FC = () => (
       Lorem ipsum dolor sit amet
     </TopDisplay>
     <Container>
-      {/* <Text>Cards</Text> */}
       <CardSwiper />
     </Container>
+    <AddButtonView>
+      <Icon name="add" size={30} color="8140D8" />
+    </AddButtonView>
+    <SearchButtonView>
+      <Icon name="search" size={25} color="8140D8" />
+    </SearchButtonView>
+
     <BottomMenu />
   </>
 );
