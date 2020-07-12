@@ -3,7 +3,7 @@ import IconFA from 'react-native-vector-icons/FontAwesome5';
 import IconEX from 'react-native-vector-icons/Entypo';
 import IconAN from 'react-native-vector-icons/AntDesign';
 
-export const Container = styled.View`
+export const Container = styled.SafeAreaView`
   flex: 0.91;
   border-radius: 24px;
   background-color: #fff;
@@ -80,6 +80,28 @@ export const CompanyInfos = styled.View`
   flex-direction: row;
 `;
 
+export const Text = styled.Text`
+  font-family: 'Raleway-Medium';
+  color: #fff;
+  font-size: 14px;
+  line-height: 20px;
+  padding: 1px;
+  margin: auto;
+`;
+
+export const Highlight = styled.View`
+  border: 1px;
+  margin-top: 2%;
+  margin-left: 1%;
+  border: 2px #3a2a4f;
+  padding: 2px;
+  border-radius: 4px;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #3a2a4f;
+`;
+
 export const LocationInfo = styled.View`
   width: 100px;
   height: 15px;
@@ -99,21 +121,13 @@ export const Middle = styled.View`
 `;
 
 export const HighlightsView = styled.View`
+  flex: 1;
   width: 95%;
   height: 80%;
   margin-left: 2.5%;
+  flex-wrap: wrap;
   flex-direction: row;
-`;
-
-export const Info = styled.Text`
-  font-family: 'Raleway-Medium';
-  height: 15%;
-  line-height: 16px;
-  font-size: 14px;
-  margin-top: 2%;
-  margin-left: 3%;
-  border: 2px #000;
-  align-items: center;
+  justify-content: flex-start;
 `;
 
 export const UpperView = styled.View`
@@ -125,6 +139,9 @@ export const TechView = styled.View`
   width: 95%;
   height: 80%;
   margin-left: 2.5%;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: flex-start;
 `;
 
 export const BottomView = styled.View`
@@ -207,13 +224,10 @@ export const Accept = styled.TouchableOpacity`
   position: absolute;
   align-items: center;
   z-index: 2;
+  justify-content: center;
+  align-items: center;
 `;
 
-export const AcceptButton = styled(IconAN)`
-  top: 25%;
-  position: absolute;
-  z-index: 3;
-`;
 export const Decline = styled.TouchableOpacity`
   top: 35%;
   width: 55%;
@@ -222,11 +236,42 @@ export const Decline = styled.TouchableOpacity`
   background: #f23870;
   position: absolute;
   z-index: 2;
+  justify-content: center;
   align-items: center;
 `;
 
-export const DeclineButton = styled(IconAN)`
-  top: 23%;
+export const SwipeBackground = styled.View`
+  width: 100%;
+  height: 90%;
+  border-radius: 20px;
+  background-color: #fff;
+  opacity: 0.85;
+  align-items: center;
+  align-self: center;
+`;
+
+export const SwipeLeftView = styled.View`
   position: absolute;
-  z-index: 3;
+  z-index: 2;
+  top: 25%;
+  right: 25%;
+  width: 40%;
+  height: 25%;
+  border-radius: 90px;
+  background-color: #f23870;
+  justify-content: center;
+  align-items: center;
+`;
+
+export const SwipeRightView = styled.View`
+  position: absolute;
+  z-index: 2;
+  top: 25%;
+  right: 25%;
+  width: 40%;
+  height: 25%;
+  border-radius: 90px;
+  background-color: #1fb893;
+  justify-content: center;
+  align-items: center;
 `;
